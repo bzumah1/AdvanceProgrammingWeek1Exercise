@@ -1,0 +1,9 @@
+package bank;
+// extends - inheritance -- single inheritance
+public class SavingAccount extends SuperBankClass {
+	double interest;
+	public SavingAccount(String acno, double acbal, double interest ) {
+		super(acno,acbal);
+		this.interest = interest;
+	}
+}

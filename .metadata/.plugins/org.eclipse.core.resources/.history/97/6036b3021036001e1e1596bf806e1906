@@ -1,0 +1,24 @@
+package officer;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SavingAccount sa1 = new SavingAccount(010001,2000.00,0.06);
+		SavingAccount sa2 = new SavingAccount(010002,5000.00,0.03);
+//		CurrentAccount ca1 = new CurrentAccount();
+//		CurrentAccount ca2 = new CurrentAccount();
+		DisplayValue(sa1);
+		DisplayValue(sa2);
+		SavingAccount sa3 = new SavingAccount(3,2000.00);
+//		DisplayValue(sa3);
+	}
+
+	public static void DisplayValue(BankAccount sa1) {
+		// TODO Auto-generated method stub
+		sa1.DisplayIndividual();
+	}
+	
+	
+	
+}

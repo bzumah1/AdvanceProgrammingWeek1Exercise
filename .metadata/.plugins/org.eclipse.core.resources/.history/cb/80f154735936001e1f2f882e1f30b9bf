@@ -1,0 +1,14 @@
+package Bank;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SavingAccount sa1 = new SavingAccount(010001,2000.00,0.06);
+		SavingAccount sa2 = new SavingAccount( 010002,5000.00,0.03);
+		CurrentAccount ca1 = new CurrentAccount(010001,2000.00,0.06);
+		CurrentAccount ca2 = new CurrentAccount( 010002,5000.00,0.03);
+		
+		sa1.deposite(300);
+	}
+
+}

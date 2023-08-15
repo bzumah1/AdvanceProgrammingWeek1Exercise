@@ -1,0 +1,14 @@
+package Bank;
+
+public class SavingAccount extends BankClass {
+	double Interest;
+	public SavingAccount(int acc, double initialbal, double interest) {
+	super(acc,initialbal);
+	}
+	
+	public void depositeAmt(double amt) {
+		AddNewAmt(amt);
+	}
+
+	
+}

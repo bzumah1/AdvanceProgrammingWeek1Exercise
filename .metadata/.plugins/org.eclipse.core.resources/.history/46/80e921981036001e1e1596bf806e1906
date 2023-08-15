@@ -1,0 +1,17 @@
+package officer;
+
+public class BankAccount {
+	int ACCNO;
+	double InitialBalance;
+
+	public BankAccount(int accoutno, double initialBal) {
+		this.ACCNO =  accoutno;
+		this.InitialBalance = initialBal;
+	
+	}
+		
+	public void DisplayIndividual(){
+		System.out.println(ACCNO);
+		System.out.println(InitialBalance);
+	}
+}

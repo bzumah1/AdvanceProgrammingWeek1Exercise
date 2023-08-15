@@ -1,0 +1,7 @@
+package officer;
+
+public class CurrentAccount extends BankAccount {
+	public CurrentAccount(int accoutno, double initialBal, double Rate) {
+		 super(accoutno,initialBal,Rate);
+	 }
+}

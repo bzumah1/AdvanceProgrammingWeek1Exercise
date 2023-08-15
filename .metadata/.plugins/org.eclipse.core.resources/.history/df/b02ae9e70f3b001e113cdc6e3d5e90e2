@@ -1,0 +1,47 @@
+package bank;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception{
+		java.io.File file = new java.io.File("savingAc.txt");
+		
+		Scanner sc = new Scanner(file);
+		SavingAccount sa1 = null;
+		while(sc.hasNext()) {
+			String BankAC = sc.next();
+			double Balance = sc.nextDouble();
+			double Interest = sc.nextDouble();
+			 sa1 = new SavingAccount(BankAC,Balance,Interest);
+		}
+//		// TODO Auto-generated method stub
+//		//Instant create
+//		SavingAccount sa1 = new SavingAccount("010001",2000.00,0.06);
+//		SavingAccount sa2 = new SavingAccount("010002",5000.00,0.03);
+//		//call 1
+//		
+//		CurrentAccount ca1 = new CurrentAccount("020001",4000.00,5000.00);
+//		CurrentAccount ca2 = new CurrentAccount("020002",10000.00,8000.00);
+//		
+		sa1.DepositeWithInterest(500);
+		sa1.DisplayAllGivenAccount();
+//		sa2.DepositeWithInterest(600);
+//		ca1.deposite(100);
+//		ca2.deposite(50);
+//		
+//		//overriding - yautai parameter ma value pass garne ho
+//		displayAccount(sa1);
+//		displayAccount(sa2);
+//		displayAccount(ca1);
+//		displayAccount(ca2);
+//		SavingAccount sa3 = new SavingAccount("010003",1000.00);
+//		//2
+	}
+
+	private static void displayAccount(SuperBankClass value) {
+		// TODO Auto-generated method stub
+		value.DisplayAllGivenAccount();
+	}
+
+}

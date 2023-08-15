@@ -1,0 +1,15 @@
+package officer;
+
+public class SavingAccount extends BankAccount {
+	
+ public SavingAccount(int accoutno, double initialBal, double Rate) {
+	 super(accoutno,initialBal,Rate);
+ }
+ public SavingAccount(int accoutno, double initialBal) {
+	 super(accoutno,initialBal);
+ }
+ public void DisplayInfo() {
+	 DisplayIndividual();
+ }
+ 
+}

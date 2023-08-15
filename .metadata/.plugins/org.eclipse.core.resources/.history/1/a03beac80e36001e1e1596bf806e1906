@@ -1,0 +1,15 @@
+package officer;
+
+public class BankAccount {
+	int ACCNO;
+	double InitialBalance;
+	double YearlyInterest;
+	public BankAccount(int accoutno, double initialBal, double Rate) {
+		this.ACCNO =  accoutno;
+		this.InitialBalance = initialBal;
+		this.YearlyInterest = Rate;
+	}
+	public int DisplayAccount() {
+		return ACCNO;
+	}
+}

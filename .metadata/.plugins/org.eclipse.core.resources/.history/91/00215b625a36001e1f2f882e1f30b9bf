@@ -1,0 +1,17 @@
+package Bank;
+
+public class SavingAccount extends BankClass {
+	double Interest;
+	double CalcAmt;
+	public SavingAccount(int acc, double initialbal, double interest) {
+	super(acc,initialbal);
+	this.Interest = interest;
+	}
+	
+	public void depositeAmt(double amt) {
+		CalcAmt = getInitialBalance()*Interest;
+		AddNewAmt(CalcAmt);
+	}
+
+	
+}

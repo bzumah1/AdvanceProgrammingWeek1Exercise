@@ -1,0 +1,7 @@
+package bank;
+
+public class SavingAccount extends SuperBankClass {
+	public SavingAccount(String acno, double acbal, double interest ) {
+		
+	}
+}

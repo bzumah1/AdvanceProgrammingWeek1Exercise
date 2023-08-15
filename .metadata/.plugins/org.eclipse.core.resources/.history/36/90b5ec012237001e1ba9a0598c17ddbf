@@ -1,0 +1,10 @@
+package bank;
+
+public class SuperBankClass {
+	String Acno;
+	double AcBal;
+	public SuperBankClass(String accno, double AcBal) {
+		this.Acno = accno;
+		this.AcBal = AcBal;
+	}
+}

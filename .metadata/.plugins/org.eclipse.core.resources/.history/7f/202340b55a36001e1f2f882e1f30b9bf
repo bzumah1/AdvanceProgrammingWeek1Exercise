@@ -1,0 +1,10 @@
+package Bank;
+
+public class CurrentAccount extends BankClass {
+
+	double overdraft;
+	
+	public CurrentAccount(int acc, double initialbal, double overdraft) {
+		super(acc,initialbal);
+	}
+}
